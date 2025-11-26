@@ -31,7 +31,7 @@ func main() {
 	})
 
 	// Auth
-	mux.Handle("/api/auth/signup", http.HandlerFunc(authController.SignUp))
+	mux.Handle("/api/auth/register", http.HandlerFunc(authController.SignUp))
 	mux.Handle("/api/auth/login", http.HandlerFunc(authController.Login))
 	mux.Handle("/api/auth/logout", http.HandlerFunc(authController.Logout))
 
